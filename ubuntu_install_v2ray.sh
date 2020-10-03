@@ -47,7 +47,7 @@ function getData()
 {
     while true
     do
-        read -p "请输入v2ray的端口[1-65535]:" port
+        port="916"
         [ -z "$port" ] && port="21568"
         expr $port + 0 &>/dev/null
         if [ $? -eq 0 ]; then
